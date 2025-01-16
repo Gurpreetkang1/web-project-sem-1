@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel India</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background: #2c3e50;
+            color: #ecf0f1;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            margin: 0 20px;
+        }
+
+        nav ul li a {
+            color: #ecf0f1;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #e74c3c;
+        }
+
+        .hero {
+            padding: 100px 20px;
+            text-align: center;
+            position: relative;
+            background-image: url('C:/Users/gurpr/Downloads/covwe.jpg'); /* Change to the correct path */
+            background-size: cover;
+            background-position: center;
+            color: white;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.5); /* Dark overlay */
+            z-index: 1;
+        }
+
+        .hero h2 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            position: relative;
+            z-index: 2; /* Ensure text is above overlay */
+        }
+
+        .hero button {
+            background: #e74c3c;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 1.2em;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.3s;
+            position: relative;
+            z-index: 2; /* Ensure button is above overlay */
+        }
+
+        .hero button:hover {
+            background: #c0392b;
+        }
+
+        .highlights {
+            padding: 40px 20px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            gap: 20px;
+        }
+
+        .destination-card {
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            margin: 10px;
+            overflow: hidden;
+            transition: transform 0.3s;
+            width: 300px;
+        }
+
+        .destination-card img {
+            width: 100%;
+            border-radius: 10px 10px 0 0;
+        }
+
+        .destination-card h3 {
+            margin: 15px 0;
+        }
+
+        .destination-card p {
+            padding: 0 15px 15px;
+            color: #7f8c8d;
+        }
+
+        .destination-card:hover {
+            transform: scale(1.05);
+        }
+
+        footer {
+            text-align: center;
+            padding: 15px 0;
+            background: #2c3e50;
+            color: #ecf0f1;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Explore Incredible India</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="destinations.html">Destinations</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="services.html">Services</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h2>Your Journey Begins Here</h2>
+            <button onclick="window.location.href='destinations.html'">Explore Now</button>
+            <div style="margin-top: 20px;">
+                <button onclick="window.location.href='services.html'">Book Now</button>
+                <button onclick="window.location.href='gallery.html'">View Gallery</button>
+            </div>
+        </section>
+        <section class="highlights">
+            <h2>Popular Destinations</h2>
+            <div class="destination-card">
+                <img src="C:/Users/gurpr/Downloads/rajastan.jpeg" alt="Rajasthan">
+                <h3>Rajasthan</h3>
+                <p>Experience the royal heritage.</p>
+            </div>
+            <div class="destination-card">
+                <img src="C:/Users/gurpr/OneDrive/Desktop/keral.jpeg" alt="Kerala">
+                <h3>Kerala</h3>
+                <p>Explore the backwaters.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Travel India</p>
+    </footer>
+</body>
+</html>
